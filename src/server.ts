@@ -17,7 +17,7 @@ app.get("/", (request: Request, response: Response) => {
   response.status(200).send("Hello World");
 });
 
-app.post("/payment-sheet", async (req, res) => {
+app.post("/stripe-api/payment-sheet", async (req, res) => {
   const { amount } = req.body;
 
   if (!amount || typeof amount !== "number" || amount <= 0) {

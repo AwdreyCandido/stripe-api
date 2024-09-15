@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A simple integration with stripe payments api",
   "main": "index.js",
+  "engines": {"node": "14.x"},
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
